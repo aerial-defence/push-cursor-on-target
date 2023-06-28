@@ -77,10 +77,22 @@ class CursorOnTarget:
             "le": "10"     #unit["le"]1
         }
 
-        
+        detail_attr = {
+            "callsign": str(unit["callsign"])
+        }
+
+        track_attr = {
+            "course": str(unit["course"]),
+            "speed": str(unit["speed"])
+        }
+
         cot = ET.Element('event', attrib=evt_attr)
-        ET.SubElement(cot, 'detail')
         ET.SubElement(cot, 'point', attrib=pt_attr)
+        det = ET.SubElement(cot, 'detail')
+        ET.SubElement(det, 'remarks').text = str(unit["remarks"])
+        ET.SubElement(det, 'contact', attrib=detail_attr)
+        ET.SubElement(det, 'track', attrib=track_attr)
+
     
         cot_xml = '<?xml version="1.0"?>' + ET.tostring(cot, encoding='unicode')
         
