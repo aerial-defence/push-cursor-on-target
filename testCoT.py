@@ -13,7 +13,11 @@ params = {  # SWX parking lot
     "identity": "hostile",
     "dimension": "land-unit",
     "entity": "military",
-    "type": "U-C"
+    "type": "U-C",
+    "remarks": "Test Message",
+    "callsign": "12345",
+    "course": "0",
+    "speed": "0"    
 #    "type": "U-C-R-H"
 }
 
