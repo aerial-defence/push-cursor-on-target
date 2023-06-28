@@ -15,11 +15,12 @@ ID = {
     "suspect": "s",
     "hostile": "h",
     "joker": "j",
-    "faker": "f",
+    "faker": "k",
     "none": "o",
     "other": "x"
 }
 DIM = {
+    "unknown": "Z",
     "space": "P",
     "air": "A",
     "land-unit": "G",
@@ -28,6 +29,7 @@ DIM = {
     "sea-surface": "S",
     "sea-subsurface": "U",
     "subsurface": "U",
+    "sof": "F",
     "other": "X"
 }
 
