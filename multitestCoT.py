@@ -1,6 +1,6 @@
 import os
 import time
-import CoT
+import testCoT
 
 ATAK_IP = os.getenv('ATAK_IP', '192.168.1.160')
 ATAK_PORT = int(os.getenv('ATAK_PORT', '4242'))
